@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SmartSum | Cognifyz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body onload="displayGreeting()">
+  <main class="main-container">
+    <section class="card">
+      <header class="header">
+        <h1>Welcome Master</h1>
+        <p>Your friendly calculator by Cognifyz</p>
+        <button class="theme-toggle" onclick="changeColor()">Change Theme</button>
+      </header>
+
+      <section class="calculator">
+        <h2>Simple Addition Tool</h2>
+        <input type="number" id="num1" placeholder="First Number" required />
+        <span class="operator">+</span>
+        <input type="number" id="num2" placeholder="Second Number" required />
+        <button class="add-btn" onclick="calculateSum()">Calculate</button>
+        <div class="result">
+          <label>Output:</label>
+          <span id="result"></span>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="greetingModal" class="modal">
+    <div class="modal-content">
+      <p id="greetingMessage"></p>
+      <button class="start-btn" onclick="closeModal()">Get Started</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
